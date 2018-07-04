@@ -10,13 +10,13 @@ const Navbar = () => (
     <li className="nav-item">
       <a className="nav-link active" href="#">
         <span data-feather="home"></span>
-        User <span className="sr-only">(current)</span>
+        User <h6 id="name">Bob Michel</h6>
       </a>
     </li>
     <li className="nav-item">
       <a className="nav-link" href="#">
         <span data-feather="file"></span>
-        Balance
+        Balance: <span id="balance">100.00</span>
       </a>
     </li>
     <li className="nav-item">
