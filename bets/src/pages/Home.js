@@ -1,11 +1,13 @@
 import React from 'react';
 import HomeNav from "../components/HomeNav";
-import HomeFooter from "../components/HomeFooter";
 import HomeDisplay from "../components/HomeDisplay";
+import HomeFooter from "../components/HomeFooter";
+
+
 
 const Home = () =>  (
       
-    <div>
+  <div>
          <nav className="site-header sticky-top py-1">
           <div className="container d-flex flex-column flex-md-row justify-content-between">
             <a className="py-2" href="#">
@@ -15,8 +17,8 @@ const Home = () =>  (
         </nav>
         <HomeDisplay/>
         <HomeNav/>
-        <HomeFooter/>    
-    </div>
+      <HomeFooter/>  Home Footer Needs no postion Fixed .. need to fix this issue
+  </div>
      
 )
   

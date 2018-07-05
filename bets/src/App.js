@@ -9,7 +9,7 @@ import './App.css';
 
 
 
-const App = () => (
+const App  = () => (
   <Router>
     <div>
         <Route exact path="/events" component={Events} />
