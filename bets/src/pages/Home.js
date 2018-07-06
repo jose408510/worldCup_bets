@@ -17,7 +17,7 @@ const Home = () =>  (
         </nav>
         <HomeDisplay/>
         <HomeNav/>
-      <HomeFooter/>  Home Footer Needs no postion Fixed .. need to fix this issue
+      <HomeFooter/> 
   </div>
      
 )

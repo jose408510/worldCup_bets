@@ -14,7 +14,7 @@ const EventBets = () => (
             </main>
         </div>
     </div>
-    <HomeFooter/>
+    {/* <HomeFooter/> */}
 </div>
   
   );

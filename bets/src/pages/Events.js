@@ -22,7 +22,7 @@ const Events = () => (
             </main>
         </div>
     </div>
-      <HomeFooter/>
+      {/* <HomeFooter/> */}
 </div>
 
 );
