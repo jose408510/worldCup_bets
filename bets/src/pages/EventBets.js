@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "../components/Navbar";
 import HomeFooter from "../components/HomeFooter";
 import NavbarTop from "../components/NavbarTop";
+import BetList from "../components/BetList/BetList";
+import BetDetails from "../components/BetDetails/BetDetails";
 
 const EventBets = () => (
 <div>
@@ -10,11 +12,11 @@ const EventBets = () => (
         <div className="row">
           <NavBar/>
             <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
-            here the content would go .. we could apply another components to plug in
+            <BetDetails/>
+            <BetList/>
             </main>
         </div>
     </div>
-    {/* <HomeFooter/> */}
 </div>
   
   );

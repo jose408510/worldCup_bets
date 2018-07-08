@@ -32,7 +32,7 @@ const Navbar = () => (
   </ul>
   <ul className="nav flex-column mb-2">
   <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/profile">
         <span data-feather="file"></span>
         Update Profile
       </a>
@@ -44,7 +44,7 @@ const Navbar = () => (
       </a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/home">
         <span data-feather="shopping-cart"></span>
         Logout
       </a>

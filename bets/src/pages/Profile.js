@@ -3,6 +3,7 @@ import NavBar from "../components/Navbar";
 import HomeFooter from "../components/HomeFooter";
 import NavbarTop from "../components/NavbarTop";
 import PaymentInfo from "../components/PaymentInfo";
+import SoccerNews from "../components/SoccerNews";
 
 
 const Profile = () => (
@@ -12,12 +13,12 @@ const Profile = () => (
         <div className="row">
           <NavBar/>
             <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
-            <PaymentInfo/>  
+            <PaymentInfo/>
+            <SoccerNews/>
             </main>
         </div>
     </div>
     <hr></hr>
-    {/* <HomeFooter/> */}
 </div>
   
   );
