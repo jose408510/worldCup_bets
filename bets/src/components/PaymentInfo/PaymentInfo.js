@@ -1,5 +1,6 @@
 import React from 'react'
 import "./PaymentInfo.css";
+import Credit from "../Credit"
 
 
 const PaymentInfo = () => (
@@ -49,7 +50,7 @@ const PaymentInfo = () => (
             
             <h4 className="mb-3">Credit Card</h4>
 
-            <div className="d-block my-3">
+            {/* <div className="d-block my-3">
               <div className="custom-control custom-radio">
                 <input id="credit" name="paymentMethod" type="radio" className="custom-control-input" checked required/>
                 <label className="custom-control-label" for="credit">Credit card</label>
@@ -62,8 +63,8 @@ const PaymentInfo = () => (
                 <input id="paypal" name="paymentMethod" type="radio" className="custom-control-input" required/>
                 <label className="custom-control-label" for="paypal">PayPal</label>
               </div>
-            </div>
-            <div className="row">
+            </div> */}
+            {/* <div className="row">
               <div className="col-md-6 mb-3">
                 <label for="cc-name">Name on card</label>
                 <input type="text" className="form-control" id="cc-name" placeholder="" required/>
@@ -79,8 +80,8 @@ const PaymentInfo = () => (
                   Credit card number is required
                 </div>
               </div>
-            </div>
-            <div className="row">
+            </div> */}
+            {/* <div className="row">
               <div className="col-md-3 mb-3">
                 <label for="cc-expiration">Expiration</label>
                 <input type="text" className="form-control" id="cc-expiration" placeholder="" required/>
@@ -95,8 +96,9 @@ const PaymentInfo = () => (
                   Security code required
                 </div>
               </div>
-            </div>
-            <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+            </div> */}
+            <Credit/>
+            {/* <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> */}
             <hr className="mb-4"></hr>
           </form>
         </div>
