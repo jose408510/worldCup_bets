@@ -7,6 +7,7 @@ import Profile from "./pages/Profile"
 import UserPage from "./pages/UserPage"
 import './App.css';
 import PaymentConfirmation from './pages/PaymentConfirmation';
+import PendingBiz from './pages/PendingBiz';
 
 
 
@@ -19,6 +20,7 @@ const App  = () => (
         <Route exact path="/UserPage" component={UserPage} />
         <Route exact path="/Profile" component={Profile} />
         <Route exact path="/AddFunds" component={PaymentConfirmation} />
+        <Route exact path="/PendingBiz" component={PendingBiz} />
     </div>
   </Router>    
 );

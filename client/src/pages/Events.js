@@ -3,6 +3,8 @@ import NavBar from "../components/Navbar";
 import Games from "../components/Games";
 import HomeFooter from "../components/HomeFooter";
 import NavbarTop from "../components/NavbarTop";
+import SoccerNews from "../components/SoccerNews";
+
 
 
 
@@ -19,6 +21,8 @@ const Events = () => (
                     Leaving this incase we want to add stuff here ... // for some reason when i remove import Games this text is gone
                     </div>
                 </div>
+                <SoccerNews/>
+
             </main>
         </div>
     </div>

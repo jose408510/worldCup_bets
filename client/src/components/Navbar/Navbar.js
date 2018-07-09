@@ -38,9 +38,15 @@ const Navbar = () => (
       </a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/Pendingbiz">
         <span data-feather="shopping-cart"></span>
-        History
+        Pending Transactions
+      </a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" href="/events">
+        <span data-feather="shopping-cart"></span>
+        Events
       </a>
     </li>
     <li className="nav-item">
