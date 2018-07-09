@@ -11,3 +11,6 @@ h1{
     font-weight: 500 !important;
     line-height: 1.2;
 }
+.px-4{
+    background:linear-gradient(90deg,#0d6632,#f4c01a);
+}
