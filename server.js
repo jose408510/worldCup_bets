@@ -2,9 +2,9 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const passport = require('passport'),
-const mongoose = require('mongoose'),
-const cookieParser = require('cookie-parser'),
+const passport = require('passport');
+const mongoose = require('mongoose');
+const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/auth";
 mongoose.connect(mongoURI, err => {
@@ -40,9 +40,9 @@ if (process.env.NODE_ENV === "production") {
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("/home", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("/home", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
