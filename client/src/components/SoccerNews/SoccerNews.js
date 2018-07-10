@@ -55,7 +55,7 @@ class SoccerNews extends Component {
                 //   <div key={i}>
             <div>
                 <div class="jumbotron jumbotron-fluid" key={i}>
-                    <div class="container">
+                    <div class="container-fluid">
                         <h6 class="display-4">{item.title}</h6>
                         <p class="lead" >{item.description}</p>
                         {/* <a href={item.url}>{item.url}</a> */}

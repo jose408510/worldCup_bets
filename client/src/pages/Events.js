@@ -23,6 +23,8 @@ const Events = () => (
                     </div>
                 </div>
                 <Games/>
+                <h1>World Cup News</h1>
+                <hr/>
                 <SoccerNews/>
             </main>
         </div>

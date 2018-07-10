@@ -117,4 +117,10 @@ body {
   }
   .sizeing{
     margin-bottom: 25px; 
+    background: #32383e ;
+    color: white;
+  }
+  .bettingOdd{
+    text-align: center;
+    margin: 5px;
   }

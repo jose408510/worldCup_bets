@@ -12,17 +12,18 @@ import games from "./games.json";
     
       const gamesArray = games.map((game, i) => {
       return (
-        // <div class="row">
-        //   <div className="col-md-6">
-        <div className="panel panel-theme sizeing">
+        
+      <div className="panel panel-theme sizeing">
         {/* <!-- Default panel contents --> */}
+        <a href={game.url}>
           <img className="card-img-top" src={pix[i]} alt="Card image cap"/>
+          </a>
             <div className="panel-heading">
-              <h3 className="panel-title">{game.name}</h3>
+              <h3 className="panel-title bettingOdd">{game.name}</h3>
             </div>
         
         <div className="panel-body">
-          <p>Betting Odds, Spread, info, info</p>
+          <p className="bettingOdd">Betting Odds, Spread, info, info</p>
         </div>
 
         {/* <!-- List group --> */}

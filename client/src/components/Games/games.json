@@ -6,7 +6,8 @@
         "date": "Tuesday July 10th, 2018",
         "stadium": "Krestovsky Stadium, Saint Petersburg",
         "referee": "Andrés Cunha (Uruguay)",
-        "match": "Match 61"
+        "match": "Match 61",
+        "url": "/eventBets"
       },
       {
         "id": "2",
@@ -16,7 +17,9 @@
         "date": "Wednesday July 11th, 2018",
         "stadium": "Luzhniki Stadium, Moscow",
         "referee": "Cüneyt Çakır (Turkey)",
-        "match": "Match 62"
+        "match": "Match 62",
+        "url": "/eventBetsTwo"
+
       }
     ]
   
