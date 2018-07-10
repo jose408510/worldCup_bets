@@ -8,6 +8,7 @@ import UserPage from "./pages/UserPage"
 import './App.css';
 import PaymentConfirmation from './pages/PaymentConfirmation';
 import PendingBiz from './pages/PendingBiz';
+import EventBetsTwo from './pages/EventBetsTwo';
 
 
 
@@ -16,6 +17,7 @@ const App  = () => (
     <div>
         <Route exact path="/events" component={Events} />
         <Route exact path="/eventbets" component={EventBets} />
+        <Route exact path="/EventBetsTwo" component={EventBetsTwo} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/UserPage" component={UserPage} />
         <Route exact path="/Profile" component={Profile} />

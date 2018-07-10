@@ -1,150 +1,100 @@
 import React from 'react'
 import "./Games.css";
-
-
-const Games = () => (
-
-<div className="table-responsive">
-    <table className="table table-striped table-sm">
-        <thead>
-            <tr>
-            <th>Date</th>
-            <th>Time Start</th>
-            <th>Stadium</th>
-            <th>Group</th>
-            <th>Team 1</th>
-            <th>Home Team</th>
-            <th>Score</th>
-            <th>Away Team</th>
-            <th>Score </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>dolor</td>
-            <td>sit</td>
-            <td>dolor</td>
-            <td>sit</td>
-            <td>dolor</td>
-            <td>sit</td>
-            <td>sit</td>
-            </tr>
+import image1 from "./images/France-Belgium-Size.jpg";
+import image2 from "./images/Croatia-England-Size.jpg";
+import games from "./games.json";
 
 
 
+    const Games = () => {
+      
+    const pix = [image1, image2]
+    
+      const gamesArray = games.map((game, i) => {
+      return (
+        // <div class="row">
+        //   <div className="col-md-6">
+        <div className="panel panel-theme sizeing">
+        {/* <!-- Default panel contents --> */}
+          <img className="card-img-top" src={pix[i]} alt="Card image cap"/>
+            <div className="panel-heading">
+              <h3 className="panel-title">{game.name}</h3>
+            </div>
+        
+        <div className="panel-body">
+          <p>Betting Odds, Spread, info, info</p>
+        </div>
+
+        {/* <!-- List group --> */}
+        <ul className="list-group">
+          <li className="list-group-item gameStuff">{game.round}</li>
+          <li className="list-group-item gameStuff">{game.date}</li>
+          <li className="list-group-item gameStuff">{game.stadium}</li>
+          <li className="list-group-item gameStuff">{game.referee}</li>
+          <li className="list-group-item gameStuff">{game.match}</li>
+        </ul>
+      </div>
+      // </div>
+      // </div>
+      )
+    });
 
 
+    return (
+        <div className='container'>
+          {gamesArray}
+        </div>
+    )
+    
+  };
 
-
-            {/* <tr>
-            <td>1,002</td>
-            <td>amet</td>
-            <td>consectetur</td>
-            <td>adipiscing</td>
-            <td>elit</td>
-            </tr>
-            <tr>
-            <td>1,003</td>
-            <td>Integer</td>
-            <td>nec</td>
-            <td>odio</td>
-            <td>Praesent</td>
-            </tr>
-            <tr>
-            <td>1,003</td>
-            <td>libero</td>
-            <td>Sed</td>
-            <td>cursus</td>
-            <td>ante</td>
-            </tr>
-            <tr>
-            <td>1,004</td>
-            <td>dapibus</td>
-            <td>diam</td>
-            <td>Sed</td>
-            <td>nisi</td>
-            </tr>
-            <tr>
-            <td>1,005</td>
-            <td>Nulla</td>
-            <td>quis</td>
-            <td>sem</td>
-            <td>at</td>
-            </tr>
-            <tr>
-            <td>1,006</td>
-            <td>nibh</td>
-            <td>elementum</td>
-            <td>imperdiet</td>
-            <td>Duis</td>
-            </tr>
-            <tr>
-            <td>1,007</td>
-            <td>sagittis</td>
-            <td>ipsum</td>
-            <td>Praesent</td>
-            <td>mauris</td>
-            </tr>
-            <tr>
-            <td>1,008</td>
-            <td>Fusce</td>
-            <td>nec</td>
-            <td>tellus</td>
-            <td>sed</td>
-            </tr>
-            <tr>
-            <td>1,009</td>
-            <td>augue</td>
-            <td>semper</td>
-            <td>porta</td>
-            <td>Mauris</td>
-            </tr>
-            <tr>
-            <td>1,010</td>
-            <td>massa</td>
-            <td>Vestibulum</td>
-            <td>lacinia</td>
-            <td>arcu</td>
-            </tr>
-            <tr>
-            <td>1,011</td>
-            <td>eget</td>
-            <td>nulla</td>
-            <td>Class</td>
-            <td>aptent</td>
-            </tr>
-            <tr>
-            <td>1,012</td>
-            <td>taciti</td>
-            <td>sociosqu</td>
-            <td>ad</td>
-            <td>litora</td>
-            </tr>
-            <tr>
-            <td>1,013</td>
-            <td>torquent</td>
-            <td>per</td>
-            <td>conubia</td>
-            <td>nostra</td>
-            </tr>
-            <tr>
-            <td>1,014</td>
-            <td>per</td>
-            <td>inceptos</td>
-            <td>himenaeos</td>
-            <td>Curabitur</td>
-            </tr>
-            <tr>
-            <td>1,015</td>
-            <td>sodales</td>
-            <td>ligula</td>
-            <td>in</td>
-            <td>libero</td>
-            </tr> */}
-        </tbody>
-    </table>
-</div>
-)
 export default Games;
+
+/*
+<div className="container">
+        <div className="row">
+    
+          <div className="col-md-6">
+                <div className="panel panel-theme">
+        <img className="card-img-top" src={image1} alt="Card image cap"/>
+        <div className="panel-heading">
+          <h3 className="panel-title">France - Belgium</h3>
+        </div>
+        <div className="panel-body">
+          <p>Betting Odds, Spread, info, info</p>
+        </div>
+
+        <ul className="list-group">
+          <li className="list-group-item">World Cup Semi-Final</li>
+          <li className="list-group-item">Tuesday July 10th, 2018</li>
+          <li className="list-group-item">Krestovsky Stadium, Saint Petersburg</li>
+          <li className="list-group-item">Referee - Andrés Cunha (Uruguay)</li>
+          <li className="list-group-item">Match 61</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="col-md-6">
+        <div className="panel panel-theme">
+          <img className="card-img-top" src={image2} alt="Card image cap"/>
+          <div className="panel-heading">
+            <h3 className="panel-title">Croatia - England</h3>
+          </div>  
+          <div className="panel-body">
+            <p>Betting Odds, Spread, info, info</p>
+          </div>
+  
+          <ul className="list-group">
+            <li className="list-group-item">World Cup Semi-Final</li>
+            <li className="list-group-item">Wednesday July 11th, 2018</li>
+            <li className="list-group-item">Luzhniki Stadium, Moscow</li>
+            <li className="list-group-item">Referee - Cüneyt Çakır (Turkey)</li>
+            <li className="list-group-item">Match 62</li>
+          </ul>
+        </div>
+      </div>
+  </div>  
+</div>
+
+
+*/

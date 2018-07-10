@@ -1,7 +1,21 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 
-const BetsToConfirm = () => (
+class BetsToConfirm extends Component {
+    state = {
+        rowHidden: false
+    }
+
+clearRow = () => {
+this.setState({
+    rowHidden: true
+});
+}
+    
+
+render(){
+    return (
+
 
 <div>
     <table class="table table-striped table-dark">
@@ -17,17 +31,21 @@ const BetsToConfirm = () => (
             </tr>
         </thead>
             <tbody>
-                <tr>
+                <tr style={{display: this.state.rowHidden ? 'none' : '' }}>
                 <th scope="row">Germany vs Russia</th>
                 <td>Germany</td>
                 <td>chickenMan</td>
                 <td>0/0 $0</td>
                 <td>$100</td>
                 <td>$1250</td>
-                <td> <button type="button" class="btn btn-primary">Accept</button> </td>
+                <td> <button type="button" class="btn btn-primary" onClick={this.clearRow}>Accept</button> </td>
                 </tr>
             </tbody>
     </table>
-</div>  )
+</div>)
+
+
+}
+
+}
   export default BetsToConfirm;
-  

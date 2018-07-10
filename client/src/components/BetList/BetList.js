@@ -65,15 +65,45 @@ class BetList extends Component {
                 <td>BigBob23</td>
                 <td>100</td>
                 <td>125$</td>
+200 , 200
+80, 60
+300, 150
+100,150
+100, 100
+120,140
+
+
+
+
                 <td>
                 <button type="button" class="btn btn-primary">Accept</button>
                 </td>
                 </tr>
                 })} */}
                 <tr>
-                <th scope="row">Germany</th>
+                <th scope="row">France</th>
                 <td>100</td>
-                <td>BigBob23</td>
+                <td>ralph</td>
+                <td>100</td>
+                <td>50$</td>
+                <td>
+                <button type="button" class="btn btn-primary">Accept</button>
+                </td>
+                </tr>
+                <tr>
+                <th scope="row">France</th>
+                <td>100</td>
+                <td>john23</td>
+                <td>100</td>
+                <td>$</td>
+                <td>
+                <button type="button" class="btn btn-primary">Accept</button>
+                </td>
+                </tr>
+                <tr>
+                <th scope="row">France</th>
+                <td>100</td>
+                <td>Bob43</td>
                 <td>100</td>
                 <td>125$</td>
                 <td>
@@ -81,9 +111,29 @@ class BetList extends Component {
                 </td>
                 </tr>
                 <tr>
-                <th scope="row">Germany</th>
+                <th scope="row">Belgium</th>
                 <td>100</td>
-                <td>BigBob23</td>
+                <td>Steve12</td>
+                <td>100</td>
+                <td>100$</td>
+                <td>
+                <button type="button" class="btn btn-primary">Accept</button>
+                </td>
+                </tr>
+                <tr>        
+                <th scope="row">Belgium</th>
+                <td>100</td>
+                <td>Jose10</td>
+                <td>100</td>
+                <td>200$</td>
+                <td>
+                <button type="button" class="btn btn-primary">Accept</button>
+                </td>
+                </tr>
+                <tr>
+                <th scope="row">Belgium</th>
+                <td>100</td>
+                <td>Erik15</td>
                 <td>100</td>
                 <td>125$</td>
                 <td>
@@ -91,101 +141,21 @@ class BetList extends Component {
                 </td>
                 </tr>
                 <tr>
-                <th scope="row">Germany</th>
+                <th scope="row">France</th>
                 <td>100</td>
-                <td>BigBob23</td>
+                <td>Juan90</td>
                 <td>100</td>
-                <td>125$</td>
+                <td>200$</td>
                 <td>
                 <button type="button" class="btn btn-primary">Accept</button>
                 </td>
                 </tr>
                 <tr>
-                <th scope="row">Germany</th>
+                <th scope="row">France</th>
                 <td>100</td>
-                <td>BigBob23</td>
+                <td>Pablo43</td>
                 <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td>125$</td>
-                <td>
-                <button type="button" class="btn btn-primary">Accept</button>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">Germany</th>
-                <td>100</td>
-                <td>BigBob23</td>
-                <td>100</td>
-                <td></td>
+                <td>550$</td>
                 <td>
                 <button type="button" class="btn btn-primary">Accept</button>
                 </td>
@@ -196,12 +166,12 @@ class BetList extends Component {
     {this.state.reputation}
     {this.state.challangers}
     {this.state.risky}
+    {this.state.cash}
     {this.state.isOpen ? (
         // let bet ={
         //     team: this.state.team
         // }
     <div>
-        <h1>Place your bet</h1>
         <input type="text" id="team" name="team" value={this.state.team} onChange={event=>{
             this.handleInputChange(event)
         }}/>
@@ -216,7 +186,9 @@ class BetList extends Component {
         }}/>
         <input type="text" id="money" name="cash" value={this.state.cash} onChange={event=>{
             this.handleInputChange(event)
+            
         }}/>
+        <button type="button" className="btn btn-primary"/>
     </div>) : ""}
     <button 
         type="button" 

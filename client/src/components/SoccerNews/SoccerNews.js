@@ -58,7 +58,9 @@ class SoccerNews extends Component {
                     <div class="container">
                         <h6 class="display-4">{item.title}</h6>
                         <p class="lead" >{item.description}</p>
-                        <a href={item.url}>{item.url}</a>
+                        {/* <a href={item.url}>{item.url}</a> */}
+                        <a class="btn btn-primary" href={item.url} role="button">Read More On this Article</a>
+
                     </div>
                 </div>
             </div>

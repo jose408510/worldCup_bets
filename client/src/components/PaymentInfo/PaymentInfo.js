@@ -1,6 +1,5 @@
 import React from 'react'
 import "./PaymentInfo.css";
-import Credit from "../Credit"
 
 
 const PaymentInfo = () => (
@@ -9,6 +8,9 @@ const PaymentInfo = () => (
           <h4 className="mb-3">Update Profile</h4>
           <form className="needs-validation" novalidate>
             <div className="row">
+            <div className="fix">
+              <a href="https://placeholder.com"><img className="imgplace" src="http://via.placeholder.com/350x150"/></a>
+              </div>
               <div className="col-md-6 mb-3">
                 <label for="firstName">First name</label>
                 <input type="text" className="form-control" id="firstName" placeholder="First Name" required/>
@@ -18,6 +20,20 @@ const PaymentInfo = () => (
               </div>
               <div className="col-md-6 mb-3">
                 <label for="lastName">Last name</label>
+                <input type="text" className="form-control" id="lastName" placeholder="Last Name" required/>
+                <div className="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div className="col-md-6 mb-3">
+                <label for="firstName">Country</label>
+                <input type="text" className="form-control" id="firstName" placeholder="First Name" required/>
+                <div className="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div className="col-md-6 mb-3">
+                <label for="lastName">State</label>
                 <input type="text" className="form-control" id="lastName" placeholder="Last Name" required/>
                 <div className="invalid-feedback">
                   Valid last name is required.
@@ -45,61 +61,20 @@ const PaymentInfo = () => (
                 Please enter a valid email address for shipping updates.
               </div>
             </div>
-
-            <hr className="mb-4"></hr>
+            <div className="mb-3">
+              <label for="photos">Upload Image<span className="text-muted">(350x150)</span></label>
+              <input type="email" className="form-control" id="email" placeholder="your photo here"/>
+              <div className="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
             
-            <h4 className="mb-3">Credit Card</h4>
 
-            {/* <div className="d-block my-3">
-              <div className="custom-control custom-radio">
-                <input id="credit" name="paymentMethod" type="radio" className="custom-control-input" checked required/>
-                <label className="custom-control-label" for="credit">Credit card</label>
-              </div>
-              <div className="custom-control custom-radio">
-                <input id="debit" name="paymentMethod" type="radio" className="custom-control-input" required/>
-                <label className="custom-control-label" for="debit">Debit card</label>
-              </div>
-              <div className="custom-control custom-radio">
-                <input id="paypal" name="paymentMethod" type="radio" className="custom-control-input" required/>
-                <label className="custom-control-label" for="paypal">PayPal</label>
-              </div>
-            </div> */}
-            {/* <div className="row">
-              <div className="col-md-6 mb-3">
-                <label for="cc-name">Name on card</label>
-                <input type="text" className="form-control" id="cc-name" placeholder="" required/>
-                <small className="text-muted">Full name as displayed on card</small>
-                <div className="invalid-feedback">
-                  Name on card is required
-                </div>
-              </div>
-              <div className="col-md-6 mb-3">
-                <label for="cc-number">Credit card number</label>
-                <input type="text" className="form-control" id="cc-number" placeholder="" required/>
-                <div className="invalid-feedback">
-                  Credit card number is required
-                </div>
-              </div>
-            </div> */}
-            {/* <div className="row">
-              <div className="col-md-3 mb-3">
-                <label for="cc-expiration">Expiration</label>
-                <input type="text" className="form-control" id="cc-expiration" placeholder="" required/>
-                <div className="invalid-feedback">
-                  Expiration date required
-                </div>
-              </div>
-              <div className="col-md-3 mb-3">
-                <label for="cc-cvv">CVV</label>
-                <input type="text" className="form-control" id="cc-cvv" placeholder="" required/>
-                <div className="invalid-feedback">
-                  Security code required
-                </div>
-              </div>
-            </div> */}
-            <Credit/>
-            {/* <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> */}
-            <hr className="mb-4"></hr>
+            {/* <hr className="mb-4"></hr> */}
+            
+            {/* <h4 className="mb-3">Credit Card</h4> */}
+
+            {/* <Credit/> */}
           </form>
         </div>
 </div>

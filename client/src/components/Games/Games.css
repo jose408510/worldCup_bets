@@ -11,6 +11,11 @@ body {
   /*
    * Sidebar
    */
+
+   .panel-theme {
+
+    border: 2px solid grey;
+   }
   
   .sidebar {
     position: fixed;
@@ -106,3 +111,10 @@ body {
   .border-top { border-top: 1px solid #e5e5e5; }
   .border-bottom { border-bottom: 1px solid #e5e5e5; }
   
+
+  .gameStuff{
+    background: #32383e !important;
+  }
+  .sizeing{
+    margin-bottom: 25px; 
+  }

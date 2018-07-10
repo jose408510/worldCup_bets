@@ -10,6 +10,8 @@ const Credit = () => (
   </div>
  
   <div className="form-body">
+    <input type="text" className="card-number" placeholder="First name"/>
+    <input type="text" className="card-number" placeholder="Last Name"/>
     <input type="text" className="card-number" placeholder="Card Number"/>
  
     <div className="date-field">
@@ -46,7 +48,7 @@ const Credit = () => (
  
     <div className="card-verification">
       <div className="cvv-input">
-        <input type="text" placeholder="CVV"/>
+        <input type="password" placeholder="CVV"/>
       </div>
       <div className="cvv-details">
         <p>3 or 4 digits usually found <br/> on the signature strip</p>

@@ -12,5 +12,12 @@ h1{
     line-height: 1.2;
 }
 .px-4{
-    background:linear-gradient(90deg,#0d6632,#f4c01a);
+    background:rgb(113, 186, 201) !important
+    /* linear-gradient(90deg,#0d6632,#f4c01a); */
+}
+.btn-outline-secondary {
+    color: white;
+    background-color: #343a40;
+    background-image: none;
+    border-color: #343a40;
 }

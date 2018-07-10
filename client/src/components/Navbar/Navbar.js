@@ -14,7 +14,7 @@ const Navbar = () => (
     <li className="nav-item">
       <a className="nav-link active" href="#">
         <span data-feather="home"></span>
-        User <h6 id="name">Bob Michel</h6>
+        User <h6 id="name">Bob Chicken</h6>
       </a>
     </li>
     <li className="nav-item">
