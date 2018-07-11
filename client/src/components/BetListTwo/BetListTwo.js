@@ -60,9 +60,9 @@ class BetListTwo extends Component {
                 <tr>
                 <th scope="row">Croatia</th>
                 <td>100</td>
-                <td>ralph</td>
+                <td>V_Dog</td>
                 <td>100</td>
-                <td>200$</td>
+                <td>100$</td>
                 <td>
                 <button type="button" class="btn btn-primary">Accept</button>
                 </td>

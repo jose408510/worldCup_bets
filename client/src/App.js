@@ -9,6 +9,7 @@ import './App.css';
 import PaymentConfirmation from './pages/PaymentConfirmation';
 import PendingBiz from './pages/PendingBiz';
 import EventBetsTwo from './pages/EventBetsTwo';
+import PendingBizz from './pages/PendingBizz';
 
 
 
@@ -23,6 +24,7 @@ const App  = () => (
         <Route exact path="/Profile" component={Profile} />
         <Route exact path="/AddFunds" component={PaymentConfirmation} />
         <Route exact path="/PendingBiz" component={PendingBiz} />
+        <Route exact path="/PendingBizz" component={PendingBizz} />
     </div>
   </Router>    
 );

@@ -16,10 +16,10 @@ const BetsToPay = () => (
         </thead>
             <tbody>
                 <tr>
-                <th scope="row">Russia vs Turkey</th>
+                <th scope="row">Brazil vs Mexico</th>
                 <td>Turkey</td>
                 <td>RowdyRaphael</td>
-                <td>payRowdyRaph</td>
+                <td>RowdyRaph</td>
                 <td>$100</td>
                 </tr>
             </tbody>

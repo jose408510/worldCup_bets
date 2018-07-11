@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import './BetsToConfirm.css'
+import './BetsToConfirmV.css'
 
-class BetsToConfirm extends Component {
+class BetsToConfirmV extends Component {
     state = {
         rowHidden: false
     }
@@ -48,4 +48,4 @@ render(){
 }
 
 }
-  export default BetsToConfirm;
+  export default BetsToConfirmV;

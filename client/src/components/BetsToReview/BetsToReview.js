@@ -15,7 +15,7 @@ const BetsToPay = () => (
         </thead>
             <tbody>
                 <tr>
-                <th scope="row">Germany vs Russia</th>
+                <th scope="row">Brazil vs Mexico</th>
                 <td>Germany</td>
                 <td>chickenMan</td>
                 <td> <button type="button" class="btn btn-primary">Yep!</button> <button type="button" class="btn btn-danger">Nope!</button> </td>
