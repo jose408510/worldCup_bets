@@ -34,10 +34,10 @@ render(){
                 <tr style={{display: this.state.rowHidden ? 'none' : '' }}>
                 <th scope="row">England vs Croatia</th>
                 <td>England</td>
-                <td>V_dog</td>
+                <td>Bob Chicken</td>
                 <td>0/0 $0</td>
                 <td>$100</td>
-                <td>$1250</td>
+                <td>$100</td>
                 <td> <button type="button" class="btn btn-primary" onClick={this.clearRow}>Accept</button> </td>
                 </tr>
             </tbody>
