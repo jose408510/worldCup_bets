@@ -8,7 +8,7 @@ const Navbar = () => (
 <div className="sidebar-sticky">
   <ul className="nav flex-column">
     <li className="nav-item">
-        <img src="https://images.unsplash.com/photo-1449130015084-2d48a345ae62?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb29652e99f70314468e31f729b28f74&auto=format&fit=crop&w=150&q=80"
+        <img src="https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b02a3183f461b46e831736317d69eed5&auto=format&fit=crop&w=150&q=80"
          alt="Avatar" className="avatar"/>
     </li>
     <li className="nav-item">
